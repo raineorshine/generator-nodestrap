@@ -1,0 +1,12 @@
+{
+  "name": "node-stack-bootstrap-1.0",
+  "version": "0.0.0",
+  "dependencies": {
+    "backbone":           "~0.9.10",
+    "bootstrap":          "http://twitter.github.com/bootstrap/assets/bootstrap.zip",
+    "underscore":         "~1.4.4",
+    "rjs":                "https://raw.github.com/RaineOrShine/rjs/master/deploy/rjs.2.9.0.js",
+    "creatable":          "https://raw.github.com/RaineOrShine/creatable/master/deploy/creatable.2.0.js",
+    "creatable-backbone": "https://raw.github.com/RaineOrShine/creatable/master/deploy/creatable.backbone.1.1.js"
+  }
+}

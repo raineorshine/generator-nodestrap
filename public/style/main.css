@@ -1,0 +1,83 @@
+/******************************
+ * Color Definitions
+ ******************************/
+/******************************
+ * Fonts
+ ******************************/
+/******************************
+ * Functions
+ ******************************/
+/******************************
+ * Defaults
+ ******************************/
+body {
+  font-style: "Helvetica Neue";
+  font-size: 22px;
+}
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+}
+/******************************
+ * Page Elements
+ ******************************/
+/******************************
+ * Components
+ ******************************/
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+.container {
+  width: 980px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.calendars {
+  list-style-type: none;
+}
+.calendars li {
+  border: solid 1px #000;
+  float: left;
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  margin: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.calendars li:hover {
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+}
+.calendars li.selected {
+  -moz-box-shadow: 0 0 10px #000;
+  -webkit-box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px #000;
+}
+.button {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px 40px;
+  background-color: #fce;
+}
+a.button {
+  color: #545454;
+}
+.mono {
+  font-style: monospace;
+  color: #999;
+}

@@ -1,0 +1,90 @@
+/******************************
+ * Color Definitions
+ ******************************/
+
+
+/******************************
+ * Fonts
+ ******************************/
+//@font-face { font-family: Winchester; src: url("fonts/1873_Winchester.ttf"); }
+
+
+/******************************
+ * Functions
+ ******************************/
+vendor(prop, args)
+  -moz-{prop} args
+  -webkit-{prop} args
+  {prop} args
+
+border-radius()
+  vendor('border-radius', arguments)
+
+box-shadow()
+  vendor('box-shadow', arguments)
+
+
+/******************************
+ * Defaults
+ ******************************/
+
+body
+	font-style "Helvetica Neue"
+	font-size 22px
+
+h1,h2,h3
+	font-weight normal
+
+a
+	text-decoration none
+
+/******************************
+ * Page Elements
+ ******************************/
+
+
+/******************************
+ * Components
+ ******************************/
+
+.cf:before, .cf:after
+    content " "
+    display table
+.cf:after
+    clear both
+.cf
+    *zoom 1
+
+.container
+	width 980px
+	margin 0 auto
+	margin-bottom 80px
+
+.calendars
+	list-style-type none
+	li
+		border solid 1px black
+		float left
+		width 150px
+		height 150px
+		padding 5px
+		margin 5px
+		overflow hidden
+		cursor pointer
+		&:hover
+			box-shadow 0 0 10px #CCC
+		&.selected
+			box-shadow 0 0 10px #000
+
+.button
+	border-radius 5px
+	padding 10px 40px
+	background-color #FCE
+
+	a&
+		color #545454
+
+.mono
+	font-style monospace
+	color #999
+
