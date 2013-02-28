@@ -26,11 +26,9 @@
 # directory structure
 
 root          // coffee output (NOTE: different than client-side because app.js needs to be relative to root)
-  |- controllers
   |- models
   |- lib      // 3rd party libraries
   |- src      // coffee input
-    |- controllers
     |- models
   |- view     // jade templates
   |- public
@@ -45,6 +43,8 @@ root          // coffee output (NOTE: different than client-side because app.js 
 # setup
 npm install
 bower install
+
+# background jobs
 stylus public/style/ -w &
 coffee -o ./ -cw src/ &
 coffee -o public/scripts/out/ -cw public/scripts/src/ &

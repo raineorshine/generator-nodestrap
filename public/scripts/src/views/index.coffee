@@ -3,7 +3,7 @@ client.views.index = Backbone.View.extend(
     ['#page-index', [
       ['.container-narrow', [
         ['.masthead', [
-          ['h3.muted', 'Project Name']
+          ['h3 a.muted', {href: '/'}, 'Project Name']
         ]]
         ['hr']
         ['.jumbotron', [
@@ -31,7 +31,7 @@ client.views.index = Backbone.View.extend(
         ]]
         ['hr']
         ['.footer', [
-          ['p', { html: true }, '&copy; Wakefulness Institute 2013']
+          ['p', { html: true }, '&copy; Project Name']
         ]]
       ]]
     ]]

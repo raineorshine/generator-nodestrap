@@ -1,5 +1,5 @@
 {
-  "name": "node-stack-bootstrap-1.0",
+  "name": "nodestrap",
   "version": "0.0.0",
   "dependencies": {
     "backbone":           "~0.9.10",
