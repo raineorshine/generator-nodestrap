@@ -29,14 +29,15 @@ box-shadow()
  ******************************/
 
 body
-	font-style "Helvetica Neue"
-	font-size 22px
+  font-family "Open Sans"
+  padding-top 20px
+  padding-bottom 40px
 
 h1,h2,h3
-	font-weight normal
+  font-weight normal
 
 a
-	text-decoration none
+  text-decoration none
 
 /******************************
  * Page Elements
@@ -55,36 +56,23 @@ a
 .cf
     *zoom 1
 
-.container
-	width 980px
-	margin 0 auto
-	margin-bottom 80px
+.container-narrow
+  margin 0 auto
+  max-width 700px
+  hr
+    margin 30px 0
 
-.calendars
-	list-style-type none
-	li
-		border solid 1px black
-		float left
-		width 150px
-		height 150px
-		padding 5px
-		margin 5px
-		overflow hidden
-		cursor pointer
-		&:hover
-			box-shadow 0 0 10px #CCC
-		&.selected
-			box-shadow 0 0 10px #000
+.jumbotron
+  text-align center
+  h1
+    font-weight 300
+    font-size 72px
+    line-height 1
+  .btn
+    font-size 21px
+    padding 14px 24px
 
-.button
-	border-radius 5px
-	padding 10px 40px
-	background-color #FCE
-
-	a&
-		color #545454
-
-.mono
-	font-style monospace
-	color #999
-
+.marketing
+  margin 60px 0
+  p + h4
+    margin-top 28px

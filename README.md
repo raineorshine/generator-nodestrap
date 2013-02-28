@@ -42,8 +42,13 @@ root          // coffee output (NOTE: different than client-side because app.js 
        |- out     // coffee output
        |- src     // coffee input
 
-# to start the app
-* npm install
-* bower install
-* copy and run the shell commands from 'start-bg-scripts.md'
-* foreman start
+# setup
+npm install
+bower install
+stylus public/style/ -w &
+coffee -o ./ -cw src/ &
+coffee -o public/scripts/out/ -cw public/scripts/src/ &
+mongod &
+
+# start app
+foreman start
