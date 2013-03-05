@@ -1,7 +1,7 @@
 # includes
 express =     require('express')
 rjs =         require('rjs').installPrototypes()
-config =      require('./config').config
+config =      require('./config.js').config
 render =      require('./controller-helper.js').render
 
 # create app and set middleware

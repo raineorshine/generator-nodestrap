@@ -6,7 +6,7 @@
 
   rjs = require('rjs').installPrototypes();
 
-  config = require('./config').config;
+  config = require('./config.js').config;
 
   render = require('./controller-helper.js').render;
 
