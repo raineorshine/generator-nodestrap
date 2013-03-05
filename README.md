@@ -13,15 +13,13 @@
 * async
 * bower
 
-
 # client-side
 
-* twitter bootstrap
+* bootstrap
 * underscore
 * backbone
 * rjs
 * creatable
-* creatable.backbone
 
 # directory structure
 
