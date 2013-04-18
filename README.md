@@ -17,16 +17,16 @@
 
 # directory structure
 
-  root
-    |- public
-      |- components
-      |- images
-      |- styles
-      |- scripts
-         |- src
-    |- src
-      |- models
-    |- view
+    root
+      |- public
+        |- components
+        |- images
+        |- styles
+        |- scripts
+           |- src
+      |- src
+        |- models
+      |- view
 
 # global dependencies
 
@@ -41,29 +41,29 @@
 
 # setup
 
-  npm install
-  bower install
+    npm install
+    bower install
 
 # background jobs
 
-  stylus public/styles/ -w &
-  coffee -o ./ -cw src/ &
-  coffee -o public/scripts/compiled -cw public/scripts/src/ &
-  mongod &
+    stylus public/styles/ -w &
+    coffee -o ./ -cw src/ &
+    coffee -o public/scripts/compiled -cw public/scripts/src/ &
+    mongod &
 
 # build
 
-  grunt compile
-  grunt concat
-  grunt uglify
-  grunt
+    grunt compile
+    grunt concat
+    grunt uglify
+    grunt
 
-  grunt clean
+    grunt clean
 
 # start app
 at port specified in .env file (default: 5001)
 
-  foreman start
+    foreman start
 
 # TODO
 
