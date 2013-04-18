@@ -28,6 +28,7 @@ app.get '/:page', (req, res) ->
       view: req.params.page
 
 # start
+console.log process.env.PORT
 app.listen process.env.PORT, ->
   console.log 'Listening on port ' + process.env.PORT
 

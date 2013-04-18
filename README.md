@@ -32,6 +32,7 @@
 
 * node
 * npm
+* grunt-cli
 * bower
 * coffee
 * stylus
@@ -47,13 +48,23 @@
 
   stylus public/styles/ -w &
   coffee -o ./ -cw src/ &
-  coffee -o public/scripts/ -cw public/scripts/src/ &
+  coffee -o public/scripts/compiled -cw public/scripts/src/ &
   mongod &
 
+# build
+
+  grunt compile
+  grunt concat
+  grunt uglify
+  grunt
+
+  grunt clean
+
 # start app
+at port specified in .env file (default: 5001)
 
   foreman start
 
 # TODO
 
-* add build system via grunt that includes minification
+* incorporate background jobs into grunt build task
