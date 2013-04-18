@@ -1,17 +1,11 @@
 # server-side (npm)
 
-* Procfile
-* node
-* coffee
-* stylus
 * express
 * mongodb
 * underscore
 * rjs
 * jade
-* requiredir
 * async
-* bower
 
 # client-side (bower)
 
@@ -33,6 +27,16 @@
     |- src
       |- models
     |- view
+
+# global dependencies
+
+* node
+* npm
+* bower
+* coffee
+* stylus
+* mongod
+* foreman
 
 # setup
 
