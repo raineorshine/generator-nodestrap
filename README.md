@@ -1,4 +1,4 @@
-# server-side
+# server-side (npm)
 
 * Procfile
 * node
@@ -13,7 +13,7 @@
 * async
 * bower
 
-# client-side
+# client-side (bower)
 
 * bootstrap
 * underscore
@@ -23,30 +23,33 @@
 
 # directory structure
 
-root          // coffee output (NOTE: different than client-side because app.js needs to be relative to root)
-  |- models
-  |- lib      // 3rd party libraries
-  |- src      // coffee input
-    |- models
-  |- view     // jade templates
-  |- public
-    |- components
-    |- img
-    |- style
-    |- scripts
-       |- lib     // 3rd party libraries
-       |- out     // coffee output
-       |- src     // coffee input
+  root
+    |- public
+      |- components
+      |- images
+      |- styles
+      |- scripts
+         |- src
+    |- src
+      |- models
+    |- view
 
 # setup
-npm install
-bower install
+
+  npm install
+  bower install
 
 # background jobs
-stylus public/style/ -w &
-coffee -o ./ -cw src/ &
-coffee -o public/scripts/out/ -cw public/scripts/src/ &
-mongod &
+
+  stylus public/styles/ -w &
+  coffee -o ./ -cw src/ &
+  coffee -o public/scripts/ -cw public/scripts/src/ &
+  mongod &
 
 # start app
-foreman start
+
+  foreman start
+
+# TODO
+
+* add build system via grunt that includes minification
