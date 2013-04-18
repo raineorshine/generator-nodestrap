@@ -1,4 +1,4 @@
-Scaffolding for a Heroku-ready web stack: **node + bower + bootstrap + backbone + creatable**
+Scaffolding for a Heroku-ready, coffee-fueled web stack: **node + bower + bootstrap + backbone + creatable**
 
 # server-side (npm)
 
@@ -14,6 +14,7 @@ Scaffolding for a Heroku-ready web stack: **node + bower + bootstrap + backbone 
 * bootstrap
 * underscore
 * backbone
+* jQuery
 * rjs
 * creatable
 
