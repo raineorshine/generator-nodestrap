@@ -1,3 +1,5 @@
+Scaffolding for a Heroku-ready web stack: node + bower + bootstrap + backbone + creatable
+
 # server-side (npm)
 
 * express
@@ -65,6 +67,6 @@ at port specified in .env file (default: 5001)
 
     foreman start
 
-# TODO
+**TODO**
 
 * incorporate background jobs into grunt build task
