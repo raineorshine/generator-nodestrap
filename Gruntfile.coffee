@@ -41,4 +41,4 @@ module.exports = (grunt) ->
 
   # Default task(s).
   grunt.registerTask 'default', ['compile', 'concat', 'uglify']
-  grunt.registerTask 'compile', ['shell:compile-server-side', 'shell:compile-client-side']
+  grunt.registerTask 'compile', ['shell:compile-server-side', 'shell:compile-client-side', 'shell:compile-css']
