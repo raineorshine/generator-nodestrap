@@ -1,11 +1,22 @@
 /******************************
- * Color Definitions
- ******************************/
+* Definitions
+*******************************/
+
+red = #ee3b26
+
+desktop = 1200px
+tablet =  767px
+mobile =  480px
+tablet-media = "(max-width: %s)" % tablet
+mobile-media = "(max-width: %s)" % mobile
+tablet-scale = (tablet/desktop)
+mobile-scale = (mobile/desktop)
 
 
 /******************************
- * Functions
- ******************************/
+* Functions
+*******************************/
+
 vendor(prop, args)
   -moz-{prop} args
   -webkit-{prop} args
@@ -17,31 +28,9 @@ border-radius()
 box-shadow()
   vendor('box-shadow', arguments)
 
-
-/******************************
- * Defaults
- ******************************/
-
-body
-  font-family "Open Sans"
-  padding-top 20px
-  padding-bottom 40px
-
-h1,h2,h3
-  font-weight normal
-
-a
-  text-decoration none
-
-/******************************
- * Page Elements
- ******************************/
-
-
-/******************************
- * Components
- ******************************/
-
+gray(luminosity)
+  hsl(0, 0, luminosity)
+  
 .cf:before, .cf:after
     content " "
     display table
@@ -50,27 +39,70 @@ a
 .cf
     *zoom 1
 
-a.muted
-  color #999
+
+/******************************
+* Base
+*******************************/
+
+*
+  box-sizing border-box
+
+body
+  font-family "Open Sans"
+  font-weight 300
+  font-size 150%
+  line-height 1.5
+
+h1,h2,h3
+  line-height 1
+  font-weight 300
+
+a
   text-decoration none
 
-.container-narrow
-  margin 0 auto
-  max-width 700px
-  hr
-    margin 30px 0
+li
+  line-height 1.2
 
-.jumbotron
+p
+  margin-bottom 1.5em
+
+label, input, button, select, textarea
+  font-weight 300
+  font-size 16px
+
+.btn
+  font-weight 700
+
+
+/******************************
+* Modules
+*******************************/
+
+.vert
+  display inline-block
+  vertical-align middle
+
+center-spaced(space = 10%)
+  overflow auto
   text-align center
-  h1
-    font-weight 300
-    font-size 72px
-    line-height 1
-  .btn
-    font-size 21px
-    padding 14px 24px
+  &> *
+    display inline-block
+    margin-right space
+    &:last-child
+      margin-right 0
+.center-spaced
+  center-spaced()
 
-.marketing
-  margin 60px 0
-  p + h4
-    margin-top 28px
+.big-announce
+  font-size 156%
+  line-height 1.5
+
+.announce
+  font-size 140%
+  line-height 1.5
+
+
+/******************************
+* Page-Specific
+*******************************/
+
