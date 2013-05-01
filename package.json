@@ -1,33 +1,37 @@
 {
-  "name": "nodestrap",
-  "description": "Scaffolding for a Heroku-ready web stack: node + bower + bootstrap + backbone + creatable",
-  "version": "2.0.0",
-  "engines": {
-    "node": "0.8.4",
-    "npm": "1.2.18"
+  "name": "generator-nodestrap",
+  "version": "0.0.0",
+  "description": "Yeoman generator for a Heroku-ready, coffee-fueled web stack.",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "homepage": "https://github.com/RaineOrShine/generator-nodestrap",
+  "bugs": "https://github.com/RaineOrShine/generator-nodestrap/issues",
+  "author": {
+    "name": "RaineOrShine",
+    "email": "user@example.net",
+    "url": "https://github.com/RaineOrShine"
   },
-  "private": true,
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RaineOrShine/generator-nodestrap.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
   "dependencies": {
-    "express": "~3.2.0",
-    "mongodb": "~1.2.14",
-    "underscore": "~1.4.4",
-    "rjs": "~2.10.0",
-    "jade": "~0.29.0",
-    "async": "~0.2.7"
+    "yeoman-generator": "~0.10.2"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-concat": "~0.2.0",
-    "grunt-contrib-clean": "~0.4.1",
-    "grunt-shell": "~0.2.2"
+    "mocha": "~1.9.0"
   },
-  "readmeFilename": "README.md",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": ">=0.8.0"
   },
-  "repository": "",
-  "author": "Raine Lourie",
-  "license": "BSD"
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
 }
