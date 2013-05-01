@@ -1,6 +1,12 @@
 Scaffolding for a Heroku-ready, coffee-fueled web stack: **node + bower + bootstrap + backbone + creatable**
 
-# server-side (npm)
+  npm install && bower install && grunt
+  foreman start
+
+*port specified in .env file (default: 5001)*
+
+# What's Included
+## server-side (npm)
 
 * express
 * mongodb
@@ -9,7 +15,7 @@ Scaffolding for a Heroku-ready, coffee-fueled web stack: **node + bower + bootst
 * jade
 * async
 
-# client-side (bower)
+## client-side (bower)
 
 * bootstrap
 * underscore
@@ -17,6 +23,17 @@ Scaffolding for a Heroku-ready, coffee-fueled web stack: **node + bower + bootst
 * jQuery
 * rjs
 * creatable
+
+## global dependencies
+
+* node
+* npm
+* grunt-cli
+* bower
+* coffee
+* stylus
+* mongod
+* foreman
 
 # directory structure
 
@@ -32,46 +49,20 @@ Scaffolding for a Heroku-ready, coffee-fueled web stack: **node + bower + bootst
         |- models
       |- view
 
-# global dependencies
-
-* node
-* npm
-* grunt-cli
-* bower
-* coffee
-* stylus
-* mongod
-* foreman
-
-# setup
-
-    npm install
-    bower install
-
-# background jobs
+# Helpful Commands
+## Background Jobs
+(this should get moved to a grunt watch task)
 
     stylus public/styles/ -w &
     coffee -o ./ -cw src/ &
     coffee -o public/scripts/compiled -cw public/scripts/src/ &
     mongod &
 
-# build
+## tasks
 
     grunt compile
     grunt concat
     grunt uglify
+    grunt clean
     grunt
 
-    grunt clean
-
-# start app
-at port specified in .env file (default: 5001)
-
-    foreman start
-
-
-----------
-
-**TODO**
-
-* incorporate background jobs into grunt build task
