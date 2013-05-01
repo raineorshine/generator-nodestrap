@@ -1,7 +1,6 @@
 # Generator nodestrap
-[![Build Status](https://secure.travis-ci.org/RaineOrShine/generator-nodestrap.png?branch=master)](https://travis-ci.org/RaineOrShine/generator-nodestrap)
-
-A generator for Yeoman.
+Yeoman generator for a Heroku-ready, coffee-fueled web stack.
+**node + bower + bootstrap + backbone + creatable**
 
 ## Getting started
 - Make sure you have [yo](https://github.com/yeoman/yo) installed:
