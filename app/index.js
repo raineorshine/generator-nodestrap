@@ -35,7 +35,7 @@ NodestrapGenerator.prototype.askFor = function askFor() {
 
   var prompts = [{
     name: 'markup',
-    message: 'Where would you like your markup? default (jade), or client (creatable, single page app)?',
+    message: 'Where would you like your markup? server (jade), or client (creatable, single page app)?',
     default: 'SERVER/client'
   }];
 
