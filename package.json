@@ -1,6 +1,6 @@
 {
   "name": "generator-nodestrap",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Yeoman generator for a Heroku-ready, coffee-fueled web stack.",
   "keywords": [
     "yeoman-generator"
