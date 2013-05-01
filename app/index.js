@@ -8,7 +8,7 @@
 
   yeoman = require("yeoman-generator");
 
-  NodestrapGenerator = module.exports = function(args, options, config) {
+  NodestrapGenerator = module.exports = function NodestrapGenerator(args, options, config) {
     yeoman.generators.Base.apply(this, arguments);
     this.on("end", function() {
       return this.installDependencies({
@@ -20,7 +20,7 @@
 
   util.inherits(NodestrapGenerator, yeoman.generators.NamedBase);
 
-  NodestrapGenerator.prototype.askFor = function() {
+  NodestrapGenerator.prototype.askFor = function askFor() {
     var cb, prompts;
     cb = this.async();
     prompts = [
@@ -39,14 +39,14 @@
     }).bind(this);
   };
 
-  NodestrapGenerator.prototype.app = function() {
+  NodestrapGenerator.prototype.app = function app() {
     this.copy("_package.json", "package.json");
     this.copy("_component.json", "component.json");
     this.copy("Gruntfile.coffee", "Gruntfile.coffee");
     return this.copy("Procfile", "Procfile");
   };
 
-  NodestrapGenerator.prototype.views = function() {
+  NodestrapGenerator.prototype.views = function views() {
     var layoutType;
     layoutType = this.spa ? 'spa' : 'default';
     return this.copy("views/layout-" + layoutType + ".jade", "views/layout.jade");
