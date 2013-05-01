@@ -1,4 +1,5 @@
-Scaffolding for a Heroku-ready, coffee-fueled web stack: **node + bower + bootstrap + backbone + creatable**
+Scaffolding for a Heroku-ready, coffee-fueled web stack.
+**node + bower + bootstrap + backbone + creatable**
 
     npm install && bower install && grunt
     foreman start
@@ -51,19 +52,19 @@ Scaffolding for a Heroku-ready, coffee-fueled web stack: **node + bower + bootst
 
 # Helpful Commands
 ## Background Jobs
-(this should get moved to a grunt watch task)
+(these should get moved to a grunt watch task)
 
     stylus public/styles/ -w &
     coffee -o ./ -cw src/ &
     coffee -o public/scripts/compiled -cw public/scripts/src/ &
     mongod &
 
-## tasks
+## Tasks
 
-    grunt compiled    # test
-    grunt static      // test2
-    grunt concat
-    grunt uglify
-    grunt clean
-    grunt
+    grunt compile     # compile coffeescript and stylus
+    grunt static      # make an http request to http://localhost:5001 and pipe the response to static/index.html
+    grunt concat      # concatenate all the client-side scripts into public/scripts/out.js
+    grunt uglify      # minify out.js into out.min.js
+    grunt clean       # delete compiled js, css, npm_modules, components, and static.
+    grunt             # compile, concat, and uglify
 
