@@ -1,6 +1,3 @@
-# Generator nodestrap
-Yeoman generator for a Heroku-ready, coffee-fueled web stack.
-**node + bower + bootstrap + backbone + creatable**
 Scaffolding for a Heroku-ready, coffee-fueled web stack.
 **node + bower + bootstrap + backbone + creatable**
 
