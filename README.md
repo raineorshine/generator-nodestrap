@@ -60,7 +60,8 @@ Scaffolding for a Heroku-ready, coffee-fueled web stack: **node + bower + bootst
 
 ## tasks
 
-    grunt compile
+    grunt compiled    # test
+    grunt static      // test2
     grunt concat
     grunt uglify
     grunt clean
