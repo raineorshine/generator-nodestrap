@@ -1,7 +1,7 @@
 Scaffolding for a Heroku-ready, coffee-fueled web stack: **node + bower + bootstrap + backbone + creatable**
 
-  npm install && bower install && grunt
-  foreman start
+    npm install && bower install && grunt
+    foreman start
 
 *port specified in .env file (default: 5001)*
 
