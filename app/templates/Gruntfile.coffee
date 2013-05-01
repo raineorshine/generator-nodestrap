@@ -4,12 +4,12 @@ module.exports = (grunt) ->
   grunt.initConfig
 
     shell:
-      'compile-client-side':
-        options: stdout: true
-        command: 'coffee -o ./ -c src/'
       'compile-server-side':
         options: stdout: true
-        command: 'coffee -o public/scripts/compiled -c public/scripts/src/'
+        command: 'coffee -o ./ -c src/'
+      'compile-client-side':
+        options: stdout: true
+        command: 'coffee -o public/scripts/compiled/ -c public/scripts/src/'
       'compile-css':
         options: stdout: true
         command: 'stylus public/styles/'

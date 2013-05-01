@@ -5,6 +5,7 @@ client.views.index = Backbone.View.extend(
         ['header', [
           ['h1.page-title', 'Awesome Project']
           ['h2.page-subtitle', 'This project is going to be awesome!']
+        ]]
       ]]
     ]
   )
