@@ -82,6 +82,9 @@ NodestrapGenerator.prototype.src = function src() {
 
 NodestrapGenerator.prototype.views = function views() {
   this.mkdir('views');
+  this.copy('views/analytics.html', 'views/analytics.html');
+  this.copy('views/conversion.html', 'views/conversion.html');
+  this.copy('views/mailchimp.html', 'views/mailchimp.html');
   this.copy('views/layout-' + this.promptAppType + '.jade', 'views/layout.jade');
   if(this.promptAppType == 'default') {
     this.copy('views/index.jade', 'views/index.jade');
