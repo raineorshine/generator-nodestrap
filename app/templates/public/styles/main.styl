@@ -29,14 +29,6 @@ box-shadow()
 gray(luminosity)
   hsl(0, 0, luminosity)
   
-.cf:before, .cf:after
-    content " "
-    display table
-.cf:after
-    clear both
-.cf
-    *zoom 1
-
 
 /******************************
 * Base
@@ -46,6 +38,7 @@ gray(luminosity)
   box-sizing border-box
 
 body
+  background-color white
   font-family "Open Sans"
   font-weight 300
   font-size 150%
