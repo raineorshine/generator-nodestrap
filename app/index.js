@@ -34,17 +34,20 @@ NodestrapGenerator.prototype.askFor = function askFor() {
   console.log(welcome);
 
   var prompts = [{
+    type: 'list',
     name: 'markup',
     message: 'Where would you like your markup? server (jade), or client (creatable, single page app)?',
-    default: 'SERVER/client'
+    choices: [{
+      name: 'Server (jade)',
+      value: 'server'
+    }, {
+      name: 'Client (creatable, single page app)',
+      value: 'client'
+    }]
   }];
 
-  this.prompt(prompts, function (err, props) {
-    if (err) {
-      return this.emit('error', err);
-    }
-
-    this.promptAppType = props.markup.toLowerCase() == 'client' ? 'spa' : 'default';
+  this.prompt(prompts, function (props) {
+    this.promptAppType = props.markup == 'client' ? 'spa' : 'default';
 
     cb();
   }.bind(this));
